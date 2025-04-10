@@ -1,21 +1,18 @@
-nombres = ["Maripaz", "Tomás", "Sofía", "Gabriel"]
+lista_nombres = ["Dilii","Maripaz","Tomás"]
+def menu():
+    while True:
+        print("1. Mensaje motivacional")
+        print("2. Lista de nombres")
+        print("3. Salir")
+        opcion = input("Digite una opcion:")
 
-while True:
-    print("\n -menu-")
-    print("1. Mostrar un mensaje motivacional")
-    print("2. Mostrar una lista de nombres")
-    print("3. Salir del programa")
+        if opcion =="1":
+            print("Tranquilo algún día alguien te va a amar como Tomás ama a Mari")
+        elif opcion =="2":
+            for nombre in lista_nombres:
+                print(nombre)
+        elif opcion =="3":
+            print("Gracias por venir")
+            break
 
-    opcion = input("Elige una opción (1, 2 o 3): ").strip()
-
-    if opcion == "1":
-        print("\nAlgún día vas a encontrar alguien que te ame como Tomás ama a Maripaz")
-    elif opcion == "2":
-        print("\nLista de nombres:")
-        for nombre in nombres:
-            print("-", nombre)
-    elif opcion == "3":
-        print("\nGracias por usar el programa")
-        break
-    else:
-        print("\nOpción no válida. Por favor elige 1, 2 o 3.")
+menu()
